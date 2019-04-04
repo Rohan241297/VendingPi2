@@ -91,10 +91,14 @@ if __name__ == '__main__':
                 elif selected == 3 and f == 'OK':
                   print('Motor 3 ON')
                   gp.output(motor3,1)
+                  time.sleep(delayValue)
+                  gp.output(motor3,0)
                   setMode('Temp')
                 elif selected == 4 and f == 'OK':
                   print('Motor 4 ON')
                   gp.output(motor4,1)
+                  time.sleep(delayValue)
+                  gp.output(motor4,0)
                   setMode('Temp')
         elif mode == 'Phone' and phoneBuy == True:
               if selected == 1:
